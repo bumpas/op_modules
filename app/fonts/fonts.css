@@ -1,0 +1,32 @@
+/* CoreSansD35Regular */
+@font-face {
+  font-family: "SansD-Regular";
+  src: url("webfonts/2E0F5C_0_0.eot");
+  src: url("webfonts/2E0F5C_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/2E0F5C_0_0.woff2") format("woff2"), url("webfonts/2E0F5C_0_0.woff") format("woff"), url("webfonts/2E0F5C_0_0.ttf") format("truetype");
+}
+/* CoreSansD37CnRegular */
+@font-face {
+  font-family: "SansD-Cn-Regular";
+  src: url("webfonts/2E0F5C_1_0.eot");
+  src: url("webfonts/2E0F5C_1_0.eot?#iefix") format("embedded-opentype"), url("webfonts/2E0F5C_1_0.woff2") format("woff2"), url("webfonts/2E0F5C_1_0.woff") format("woff"), url("webfonts/2E0F5C_1_0.ttf") format("truetype");
+}
+/* CoreSansD55Bold */
+@font-face {
+  font-family: "SansD-Bold";
+  src: url("webfonts/2E0F5C_3_0.eot");
+  src: url("webfonts/2E0F5C_3_0.eot?#iefix") format("embedded-opentype"), url("webfonts/2E0F5C_3_0.woff2") format("woff2"), url("webfonts/2E0F5C_3_0.woff") format("woff"), url("webfonts/2E0F5C_3_0.ttf") format("truetype");
+}
+/* CoreSansD57CnBold */
+@font-face {
+  font-family: "SansD-Cn-Bold";
+  src: url("webfonts/2E0F5C_4_0.eot");
+  src: url("webfonts/2E0F5C_4_0.eot?#iefix") format("embedded-opentype"), url("webfonts/2E0F5C_4_0.woff2") format("woff2"), url("webfonts/2E0F5C_4_0.woff") format("woff"), url("webfonts/2E0F5C_4_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Icons";
+  src: url("lpicons/icons.svg#Icons") format("svg");
+  src: url("lpicons/icons.eot");
+  src: url("lpicons/icons.eot?#iefix") format("embedded-opentype"), url("lpicons/icons.woff") format("woff"), url("lpicons/icons.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}

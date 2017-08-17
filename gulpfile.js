@@ -65,6 +65,12 @@ gulp.task('html', function(){
   .pipe($.browserSync.reload({stream: true}));
 });
 
+// Output fonts to build directory
+gulp.task('build', function(){
+  return gulp.src('app/fonts/**')
+    .pipe(gulp.dest('dist/fonts'));
+});
+
 // Browser Sync serve task
 gulp.task('serve', ['sass', 'html'], function(){
 
