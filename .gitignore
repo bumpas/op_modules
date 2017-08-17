@@ -1,0 +1,19 @@
+## Bower Components
+bower_components
+
+## Node stuff
+node_modules
+npm-debug.log
+
+## Sublime Text project files
+*.sublime-workspace
+
+## SASS stuff to ignore
+.sass-cache
+*.css.map
+
+
+**/.DS_Store
+
+## Ignore procedurally generated items
+dist
