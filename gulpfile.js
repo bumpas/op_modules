@@ -29,13 +29,13 @@ gulp.task('sass', function(){
         });
 
       },
-      outputStyle: 'nested',
+      outputStyle: 'expanded',
       sourceComments: true
     }))
 
     // Autoprefixer
     .pipe($.autoprefixer({
-      browsers: ['last 2 versions'],
+      browsers: ['last 4 versions'],
       cascade: false
     }))
 
