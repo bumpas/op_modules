@@ -1,0 +1,55 @@
+.t-full {
+  position: relative;
+
+  &__article {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 3em;
+
+    &--top-center {
+      justify-content: center;
+      text-align: center;
+    }
+
+    &--top-right {
+      justify-content: flex-end;
+      text-align: right;
+    }
+
+    &--center-center {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    &--center-left {
+      align-items: center;
+    }
+
+    &--center-right {
+      justify-content: flex-end;
+      align-items: center;
+      text-align: right;
+    }
+
+    &--bottom-center {
+      justify-content: center;
+      align-items: flex-end;
+      text-align: center;
+    }
+
+    &--bottom-left {
+      align-items: flex-end;
+    }
+
+    &--bottom-right {
+      justify-content: flex-end;
+      align-items: flex-end;
+      text-align: right;
+    }
+  }
+}
