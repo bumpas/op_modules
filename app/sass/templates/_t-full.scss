@@ -1,21 +1,21 @@
 .t-full {
   position: relative;
 
-  &__article {
+  &__wrap {
     position: absolute;
     display: flex;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    padding: 3em;
+    padding: 4.125em;
 
-    &--top-center {
+    &--center-top {
       justify-content: center;
       text-align: center;
     }
 
-    &--top-right {
+    &--right-top {
       justify-content: flex-end;
       text-align: right;
     }
@@ -26,30 +26,47 @@
       text-align: center;
     }
 
-    &--center-left {
+    &--left-center {
       align-items: center;
     }
 
-    &--center-right {
+    &--right-center {
       justify-content: flex-end;
       align-items: center;
       text-align: right;
     }
 
-    &--bottom-center {
+    &--center-bottom {
       justify-content: center;
       align-items: flex-end;
       text-align: center;
     }
 
-    &--bottom-left {
+    &--left-bottom {
       align-items: flex-end;
     }
 
-    &--bottom-right {
+    &--right-bottom {
       justify-content: flex-end;
       align-items: flex-end;
       text-align: right;
     }
+  }
+
+  &__article {
+    max-width: 28.75%;
+  }
+
+  &__heading {
+    font-family: $primary-font;
+    font-weight: 700;
+    letter-spacing: .08em;
+  }
+
+  &__copy {
+    font-family: $secondary-font;
+    font-size: .9375em;
+    letter-spacing: .09em;
+    line-height: 1.25em;
   }
 }
