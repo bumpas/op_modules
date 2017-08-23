@@ -14,7 +14,7 @@ var src = {
 
 gulp.task('sass', function(){
 
-  return gulp.src(['app/sass/app.scss'])
+  return gulp.src(['app/sass/*.scss'])
     .pipe($.sass({
       // Sass error handler
       onError: function(error){
