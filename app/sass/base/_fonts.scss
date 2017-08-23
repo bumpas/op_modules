@@ -1,0 +1,79 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3018588, 2015-04-30T13:29:38-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: CoreSansD35Regular by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-sans-d/regular/
+ * Copyright: Core Sans D 35 Regular
+ *
+ * Webfont: CoreSansD37CnRegular by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-sans-d/cn-regular/
+ * Copyright: Core Sans D 37 Cn Regular
+ *
+ * Webfont: CoreSansD47CnMedium by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-sans-d/cn-medium/
+ * Copyright: Core Sans D 47 Cn Medium
+ *
+ * Webfont: CoreSansD55Bold by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-sans-d/bold/
+ * Copyright: Core Sans D 55 Bold
+ *
+ * Webfont: CoreSansD57CnBold by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-sans-d/cn-bold/
+ * Copyright: Core Sans D 57 Cn Bold
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3018588
+ * Licensed pageviews: 18,750,000
+ *
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+// @import url("http://hello.myfonts.net/count/2e0f5c");
+
+/* Fool-proof @font-face */
+/* Based on http://coding.smashingmagazine.com/2013/02/14/setting-weights-and-styles-at-font-face-declaration/ */
+
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$file-path}.woff2') format('woff2'),
+           url('#{$file-path}.woff') format('woff'),
+           url('#{$file-path}.ttf') format('truetype'),
+           url('#{$file-path}.svg##{$font-family}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+  // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: $font-family;
+        src: url('#{$file-path}.svg##{$font-family}') format('svg');
+    }
+  }
+}
+
+@include font-face(Icons, '../fonts/icons/icons', 400, normal);
+
+// Core Sans
+@include font-face(CoreSans, '../fonts/coresans/2E0F5C_0_0', 400, normal);
+
+// Core Sans Bold
+@include font-face(CoreSans, '../fonts/coresans/2E0F5C_3_0', 700, normal);
+
+// Core Sans Condensed Regular
+@include font-face(CoreSansCN, '../fonts/coresans/2E0F5C_1_0', 400, normal);
+
+// Core Sans Condensed Bold
+@include font-face(CoreSansCN, '../fonts/coresans/2E0F5C_4_0', 700, normal);
+
