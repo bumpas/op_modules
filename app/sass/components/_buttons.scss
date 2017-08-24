@@ -1,0 +1,21 @@
+.btn {
+  font-family: $primary-font;
+  font-size: .875em;
+  font-weight: 700;
+  padding: 0.715em 2.857em;
+}
+
+.btn-group {
+  display: flex;
+  
+  .btn {
+    width: 100%;
+    margin-right: $b-space;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .btn:last-child {
+    margin-right: 0;
+  }
+}
