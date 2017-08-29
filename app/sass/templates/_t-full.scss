@@ -2,71 +2,82 @@
   position: relative;
 
   &__wrap {
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 4.125em;
-
-    &--center-top {
-      justify-content: center;
-      text-align: center;
+    padding: 2.125em;
+    text-align: center;  
+    
+    @media (min-width: $screen-md) {
+      position: absolute;
+      display: flex;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      padding: 4.125em;
+      text-align: left;
     }
+    
+    @media (min-width: $screen-md) {
+      &--center-top {
+        justify-content: center;
+        text-align: center;
+      }
 
-    &--right-top {
-      justify-content: flex-end;
-      text-align: right;
-    }
+      &--right-top {
+        justify-content: flex-end;
+        text-align: right;
+      }
 
-    &--center-center {
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
+      &--center-center {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
 
-    &--left-center {
-      align-items: center;
-    }
+      &--left-center {
+        align-items: center;
+      }
 
-    &--right-center {
-      justify-content: flex-end;
-      align-items: center;
-      text-align: right;
-    }
+      &--right-center {
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+      }
 
-    &--center-bottom {
-      justify-content: center;
-      align-items: flex-end;
-      text-align: center;
-    }
+      &--center-bottom {
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center;
+      }
 
-    &--left-bottom {
-      align-items: flex-end;
-    }
+      &--left-bottom {
+        align-items: flex-end;
+      }
 
-    &--right-bottom {
-      justify-content: flex-end;
-      align-items: flex-end;
-      text-align: right;
+      &--right-bottom {
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+      }
     }
   }
 
   &__article {
-    max-width: 28.75%;
+    @media (min-width: $screen-md) {
+      max-width: 370px;
+    }
   }
 
   &__heading {
     font-family: $primary-font;
     font-weight: 700;
     letter-spacing: .08em;
+    text-transform: uppercase;
   }
 
   &__copy {
     font-family: $secondary-font;
     font-size: .9375em;
     letter-spacing: .09em;
-    line-height: 1.25em;
+    line-height: 1.25;
   }
 }
