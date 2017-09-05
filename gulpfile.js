@@ -71,6 +71,23 @@ gulp.task('build', function(){
     .pipe(gulp.dest('dist/fonts'));
 });
 
+// Publish to ecommdev.office.otterbox.com/lifeproof/pattern-library
+gulp.task('publish', ['build'], function(){
+  console.log("Publishing to http://ecommdev.office.otterbox.com/lifeproof/lp-homepage");
+  return gulp.src('dist/**')
+    .pipe($.rsync({
+      hostname: 'ecommdev.office.otterbox.com',
+      destination: '/vhosts/default/lifeproof/lp-homepage/',
+      root: 'dist',
+      incremental: true,
+      progress: true,
+      emptyDirectories: true,
+      recursive: true,
+      clean: true,
+      exclude: ['.DS_Store']
+    }));
+});
+
 // Browser Sync serve task
 gulp.task('serve', ['sass', 'html'], function(){
 
