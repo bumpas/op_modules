@@ -62,6 +62,10 @@
   &__article {
     @media (min-width: $screen-md) {
       max-width: 370px;
+
+      &--light {
+        color: #fff;
+      }
     }
   }
 
