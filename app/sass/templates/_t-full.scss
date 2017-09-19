@@ -78,8 +78,11 @@
 
   &__copy {
     font-family: $secondary-font;
-    font-size: .9375em;
     letter-spacing: .09em;
     line-height: 1.25;
+
+    @media (min-width: $screen-md) {
+      font-size: 0.875em;
+    }
   }
 }
