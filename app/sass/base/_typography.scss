@@ -66,14 +66,14 @@
 @include font-face(Icons, '../fonts/icons/icons', 400, normal);
 
 // Core Sans
-@include font-face(CoreSans, '../fonts/coresans/2E0F5C_0_0', 400, normal);
+@include font-face(SansD-Regular, '../fonts/coresans/2E0F5C_0_0', 400, normal);
 
 // Core Sans Bold
-@include font-face(CoreSans, '../fonts/coresans/2E0F5C_3_0', 700, normal);
+@include font-face(SansD-Regular, '../fonts/coresans/2E0F5C_3_0', 700, normal);
 
 // Core Sans Condensed Regular
-@include font-face(CoreSansCN, '../fonts/coresans/2E0F5C_1_0', 400, normal);
+@include font-face(SansD-Cn-Regular, '../fonts/coresans/2E0F5C_1_0', 400, normal);
 
 // Core Sans Condensed Bold
-@include font-face(CoreSansCN, '../fonts/coresans/2E0F5C_4_0', 700, normal);
+@include font-face(SansD-Cn-Regular, '../fonts/coresans/2E0F5C_4_0', 700, normal);
 

@@ -6,6 +6,20 @@
 // *************************************
 
 // -------------------------------------
+//   Everything border-box
+// -------------------------------------
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// -------------------------------------
 //   Breakpoints
 // -------------------------------------
 
@@ -17,15 +31,16 @@ $screen-xl: 1440px;
 // -------------------------------------
 //   Fonts
 // -------------------------------------
-$serifCN:            "CoreSansCN", serif;
-$serif:            "CoreSans", serif;
-$icons:           "Icons", serif;
+$sans-serifCN:    "SansD-Cn-Regular", sans-serif;
+$sans-serif:      "SansD-Regular", sans-serif;
+$icons:           "Icons", sans-serif;
 
-$primary-font:        $serifCN;
-$secondary-font:      $serif;
+$primary-font:     $sans-serifCN;
+$secondary-font:   $sans-serif;
 
 // -------------------------------------
 //   Sizes
 // -------------------------------------
 
 $b-space:           1em;
+
