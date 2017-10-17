@@ -25,9 +25,50 @@
     margin-right: $b-space;
     padding-right: 0;
     padding-left: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.btn-play {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 26%;
+  transform: translate(-50%,-50%);
+  opacity: 0.75;
+  transition: width .2s ease, opacity .2s ease;
+
+  @media (min-width: $screen-sm) {
+    width: 20%;
+
+    &:hover {
+      opacity: 1;
+      width: 21%;
+    }
   }
 
-  .btn:last-child {
-    margin-right: 0;
+  &__circle {
+      fill: none;
+      stroke: #fff;
+      stroke-miterlimit: 10;
+      stroke-width: 8px;
+  }
+
+  &__polygon {
+      fill: #fff;
+  }
+
+  &--secondary {
+    .btn-play__circle {
+      stroke: #000;
+    }
+
+    .btn-play__polygon {
+      fill: #000;
+    }
   }
 }
