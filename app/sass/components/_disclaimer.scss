@@ -1,0 +1,59 @@
+.disclaimer {
+  
+  &__button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: .85em;
+    font-style: italic;
+    z-index: 1;
+    
+    p {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+    padding: 4.125em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s ease, visibility .25s ease;
+  }
+
+  #disclaimer {
+    display: none;
+  }
+
+  #disclaimer:checked ~ &__overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #disclaimer:checked ~ &__button {
+    p {
+      visibility: hidden;
+    }
+
+    p:after {
+      content: 'Close X';
+      position: absolute;
+      visibility: visible;
+      color: #fff;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+    }
+  } 
+}
