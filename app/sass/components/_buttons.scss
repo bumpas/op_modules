@@ -42,7 +42,7 @@
   opacity: 0.75;
   transition: width .2s ease, opacity .2s ease;
 
-  @media (min-width: $screen-sm) {
+  @media #{$breakpoint-not-small} {
     width: 20%;
 
     &:hover {

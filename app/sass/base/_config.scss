@@ -9,10 +9,9 @@
 //   Breakpoints
 // -------------------------------------
 
-$screen-sm: 521px;
-$screen-md: 768px;
-$screen-lg: 1024px;
-$screen-xl: 1440px;
+$breakpoint-not-small: 'screen and (min-width: 32.5625em)' !default;
+$breakpoint-medium: 'screen and (min-width: 48em)' !default;
+$breakpoint-large: 'screen and (min-width: 64em)' !default;
 
 // -------------------------------------
 //   Fonts
