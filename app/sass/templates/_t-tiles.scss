@@ -5,6 +5,7 @@
   padding: 2.125em 0;
   max-width: 67.5em;
   margin: auto;
+  @include border-box;
 
   &:after {
     content: '';

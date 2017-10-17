@@ -1,5 +1,6 @@
 .t-full {
   position: relative;
+  @include border-box;
 
   &__wrap {
     padding: 2.125em;
