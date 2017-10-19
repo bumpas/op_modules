@@ -9,7 +9,8 @@ var $ = require('gulp-load-plugins')({
 
 var src = {
   sass: 'app/sass/**/*.scss',
-  html: 'app/html/**/*.html'
+  html: 'app/html/**/*.html',
+  js:   'app/js/**/*.js'
 };
 
 gulp.task('sass', function(){
@@ -58,9 +59,11 @@ gulp.task('sass', function(){
 
 });
 
-gulp.task('html', function(){
+gulp.task('htmljs', function(){
   return gulp.src(src.html)
   .pipe($.concat('index.html'))
+  .pipe($.useref())
+  .pipe($.if('*.js', $.uglify()))
   .pipe(gulp.dest('./dist/'))
   .pipe($.browserSync.reload({stream: true}));
 });
@@ -89,14 +92,15 @@ gulp.task('publish', ['build'], function(){
 });
 
 // Browser Sync serve task
-gulp.task('serve', ['sass', 'html'], function(){
+gulp.task('serve', ['sass', 'htmljs' ], function(){
 
   $.browserSync.init({
     server: "./dist/"
   });
 
   gulp.watch(src.sass, ['sass']);
-  gulp.watch(src.html, ['html']);
+  gulp.watch(src.html, ['htmljs']);
+  gulp.watch(src.js, ['htmljs']);
 });
 
 // Default task (serve up Browser Sync)

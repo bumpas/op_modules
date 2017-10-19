@@ -1,0 +1,35 @@
+.dialog--video.ui-dialog {
+
+	.ui-dialog-titlebar {
+		position: relative;
+    padding: $b-space 0;
+    cursor: initial;
+    text-align: right;
+
+		.ui-dialog-title {
+			display: none;
+		}
+
+		.ui-button {
+			position: relative;
+			padding: 0;
+
+			&:hover {
+				background-color: transparent;
+			}
+		}
+	}
+
+	.dialog__video {
+		position: relative;
+		padding-bottom: 56.25%;
+
+		iframe {
+			position: absolute; 
+			top: 0; 
+			left: 0; 
+			width: 100%; 
+			height: 100%;
+		}
+	}
+}
