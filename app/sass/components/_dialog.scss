@@ -1,10 +1,19 @@
 .dialog--video.ui-dialog {
 
+	@include otterbox {
+		background-color: transparent;
+    border: none;
+	}
+
 	.ui-dialog-titlebar {
 		position: relative;
     padding: $b-space 0;
     cursor: initial;
     text-align: right;
+
+    @include otterbox {
+    	background-color: transparent;
+    }
 
 		.ui-dialog-title {
 			display: none;
@@ -13,6 +22,11 @@
 		.ui-button {
 			position: relative;
 			padding: 0;
+
+			@include otterbox {
+				color: $yellow;
+				background-color: transparent;
+			}
 
 			&:hover {
 				background-color: transparent;
