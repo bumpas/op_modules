@@ -1,0 +1,11 @@
+@mixin lifeproof {
+  @if $brand == 'lifeproof' {
+    @content;
+  }
+}
+
+@mixin otterbox {
+  @if $brand == 'otterbox' {
+    @content;
+  }
+}

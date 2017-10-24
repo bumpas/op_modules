@@ -76,9 +76,12 @@
   }
 
   &__heading {
-    font-weight: 700;
     letter-spacing: .08em;
     text-transform: uppercase;
+
+    @include otterbox {
+      margin-bottom: .3em;
+    }
   }
 
   &__copy {

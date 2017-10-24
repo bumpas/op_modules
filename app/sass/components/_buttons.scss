@@ -1,19 +1,49 @@
 .btn {
-  font-family: $primary-font;
   font-size: .875em;
   font-weight: 700;
   padding: 0.715em 2.857em;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  transition:
+    font-size .4s ease,
+    background-color .4s ease,
+    border-color .4s ease,
+    color .4s ease;
+  background-color: transparent;
+  color: black;
+  border-color: transparent;
 
-  &--empty-dark {
-    background-color: rgba(255,255,255,.15);
-    color: #000;
-    border: 1px solid #000;
+  @include lifeproof {
+    font-family: $sans-serifCN;
+    background-color: $aqua;
+    color: white;
+
+    &--empty-dark {
+      background-color: rgba(255,255,255,.15);
+      color: #000;
+      border: 1px solid #000;
+    }
+
+    &--empty-light {
+      background-color: rgba(0,0,0,.15);
+      color: #fff;
+      border: 1px solid #fff;
+    }
   }
 
-  &--empty-light {
-    background-color: rgba(0,0,0,.15);
-    color: #fff;
-    border: 1px solid #fff;
+  @include otterbox {
+    font-family: $nudista;
+    font-size: .75em;
+    letter-spacing: .1em;
+    background-color: $yellow;
+
+    &:hover {
+      background-color: $black;
+      border-color: $black;
+      color: $yellow;
+    }
   }
 }
 
@@ -72,3 +102,4 @@
     }
   }
 }
+

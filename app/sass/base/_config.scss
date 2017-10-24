@@ -16,12 +16,19 @@ $breakpoint-large: '(min-width: 64em)';
 // -------------------------------------
 //   Fonts
 // -------------------------------------
+
 $sans-serifCN:    "SansD-Cn-Regular", sans-serif;
 $sans-serif:      "SansD-Regular", sans-serif;
-$icons:           "Icons", sans-serif;
+$nudista:					"Nudista", sans-serif;
+$opensans:				"Open-Sans", sans-serif;
 
-$primary-font:     $sans-serifCN;
-$secondary-font:   $sans-serif;
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+	$aqua: #02BBD5;
+	$yellow: #FED100;
+	$black: #222a2b;
 
 // -------------------------------------
 //   Sizes

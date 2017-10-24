@@ -9,3 +9,13 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+
+.switcher {
+	box-sizing: border-box;
+	background-color: whitesmoke;
+	padding: 1em;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
