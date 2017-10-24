@@ -30,16 +30,16 @@
     transition: opacity .25s ease, visibility .25s ease;
   }
 
-  #disclaimer {
+  &__input {
     display: none;
   }
 
-  #disclaimer:checked ~ &__overlay {
+  &__input:checked ~ &__overlay {
     opacity: 1;
     visibility: visible;
   }
 
-  #disclaimer:checked ~ &__button {
+  &__input:checked ~ &__button {
     p {
       visibility: hidden;
     }
