@@ -2,9 +2,9 @@
   position: relative;
   display: flex;
   flex-flow: column nowrap;
-  padding: 2.125em 0;
   max-width: 67.5em;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   @include border-box;
 
   &:after {
@@ -19,7 +19,6 @@
 
   &__tile {
     position: relative;
-    text-align: center;
     flex: 0 0 32.5%;
 
     img {
@@ -41,13 +40,11 @@
   }
 
   &__article {
-    padding: 2.125em 0;
 
     h4 {
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: .18em;
-      padding-bottom: .45em;
     }
   }
 }
@@ -55,10 +52,6 @@
 
 
 /* Modifiers */
-
-.t-tiles + .t-tiles {
-  padding-top: 0;
-}
 
 .t-tiles--padded {
   &:after {
@@ -79,11 +72,6 @@
   .t-tiles__tile {
     @media #{$breakpoint-medium} {
       flex: 1;
-      margin-right: 1%;
-
-      &:last-child {
-        margin-right: 0;
-      }
     }
   }
 }

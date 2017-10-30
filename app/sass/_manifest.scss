@@ -27,10 +27,15 @@
 'functions/list-sort',
 'functions/list-remove',
 'functions/linear-interpolation';
-//'base/foundation',
-//'base/tiles',
-//'base/typography',
-//'base/tools';
+
+// -------------------------------------
+//   Vendor
+// -------------------------------------
+
+@import
+'vendor/tachyons/_spacing',
+'vendor/tachyons/_text-align';
+
 
 // -------------------------------------
 //   Components

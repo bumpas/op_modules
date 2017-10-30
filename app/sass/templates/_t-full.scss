@@ -8,8 +8,6 @@
   }
 
   &__wrap {
-    padding: 2.125em;
-    text-align: center;  
     
     @media #{$breakpoint-medium} {
       position: absolute;
@@ -18,23 +16,18 @@
       left: 0;
       bottom: 0;
       right: 0;
-      padding: 4.125em;
-      text-align: left;
 
       &--center-top {
         justify-content: center;
-        text-align: center;
       }
 
       &--right-top {
         justify-content: flex-end;
-        text-align: right;
       }
 
       &--center-center {
         justify-content: center;
         align-items: center;
-        text-align: center;
       }
 
       &--left-center {
@@ -44,13 +37,11 @@
       &--right-center {
         justify-content: flex-end;
         align-items: center;
-        text-align: right;
       }
 
       &--center-bottom {
         justify-content: center;
         align-items: flex-end;
-        text-align: center;
       }
 
       &--left-bottom {
@@ -60,7 +51,6 @@
       &--right-bottom {
         justify-content: flex-end;
         align-items: flex-end;
-        text-align: right;
       }
     }
   }
@@ -78,10 +68,6 @@
   &__heading {
     letter-spacing: .08em;
     text-transform: uppercase;
-
-    @include otterbox {
-      margin-bottom: .3em;
-    }
   }
 
   &__copy {
@@ -90,12 +76,6 @@
 
     @media #{$breakpoint-medium} {
       font-size: 0.875em;
-    }
-  }
-
-  .disclaimer {
-    &__button {
-      padding: 1em 4.125em .7em;
     }
   }
 }

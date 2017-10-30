@@ -52,13 +52,8 @@
   
   .btn {
     width: 100%;
-    margin-right: $b-space;
     padding-right: 0;
     padding-left: 0;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 
