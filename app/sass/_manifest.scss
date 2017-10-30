@@ -6,20 +6,27 @@
 // *************************************
 
 // -------------------------------------
+//   Mixins
+// -------------------------------------
+
+@import
+'mixins/brand',
+'mixins/box-sizing',
+'mixins/poly-fluid-sizing',
+'mixins/typography';
+
+// -------------------------------------
 //   Base
 // -------------------------------------
 
 @import
 'base/config',
-'mixins/brand',
 'base/typography',
 'base/utilities',
 'functions/map-sort',
 'functions/list-sort',
 'functions/list-remove',
-'functions/linear-interpolation',
-'mixins/box-sizing',
-'mixins/poly-fluid-sizing';
+'functions/linear-interpolation';
 //'base/foundation',
 //'base/tiles',
 //'base/typography',
@@ -28,6 +35,7 @@
 // -------------------------------------
 //   Components
 // -------------------------------------
+
 @import
 'components/buttons',
 'components/disclaimer',
