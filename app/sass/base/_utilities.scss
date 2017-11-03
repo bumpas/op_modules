@@ -8,8 +8,14 @@
 //   Color
 // -------------------------------------
 
-.white { color: #fff; }
+.white { color: $white; }
 
 @media #{$breakpoint-medium} {
-	.white-m { color: #fff; }
+	.white-m { color: $white; }
 }
+
+// -------------------------------------
+//   Background color
+// -------------------------------------
+
+.bg-light-grey { background-color: $light-grey; }

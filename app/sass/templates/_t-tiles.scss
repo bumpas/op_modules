@@ -65,3 +65,16 @@
     }
   }
 }
+
+.t-tiles--4col {
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
+  .t-tiles__tile {
+    flex: 0 0 50%;
+
+    @media #{$breakpoint-medium} {
+      flex: 0 0 25%;
+    }
+  }
+}
