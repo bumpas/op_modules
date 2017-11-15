@@ -16,17 +16,17 @@
   @include lifeproof {
     font-family: $sans-serifCN;
     background-color: $aqua;
-    color: white;
+    color: $white;
 
     &--empty-dark {
       background-color: rgba(255,255,255,.15);
-      color: #000;
+      color: $black;
       border: 1px solid #000;
     }
 
     &--empty-light {
       background-color: rgba(0,0,0,.15);
-      color: #fff;
+      color: $white;
       border: 1px solid #fff;
     }
   }
