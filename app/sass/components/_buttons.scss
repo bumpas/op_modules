@@ -1,8 +1,6 @@
 .btn {
   display: inline-block;
-  font-size: .875em;
   font-weight: 700;
-  padding: 0.715em 2.857em;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
@@ -15,6 +13,8 @@
 
   @include lifeproof {
     font-family: $sans-serifCN;
+    font-size: .875em;
+    padding: 0.715em 2.857em 0.5em;
     background-color: $aqua;
     color: $white;
 
@@ -34,6 +34,7 @@
   @include otterbox {
     font-family: $nudista;
     font-size: .75em;
+    padding: 0.715em 2.857em;
     letter-spacing: .1em;
     background-color: $yellow;
     border-color: $yellow;
@@ -78,22 +79,22 @@
 
   &__circle {
       fill: none;
-      stroke: #fff;
+      stroke: $white;
       stroke-miterlimit: 10;
       stroke-width: 8px;
   }
 
   &__polygon {
-      fill: #fff;
+      fill: $white;
   }
 
   &--secondary {
     .btn-play__circle {
-      stroke: #000;
+      stroke: $black;
     }
 
     .btn-play__polygon {
-      fill: #000;
+      fill: $black;
     }
   }
 }
