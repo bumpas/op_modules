@@ -85,7 +85,7 @@ gulp.task('images', function(){
 gulp.task('assets', ['fonts', 'images']);
 
 // Publish to ecommdev.office.otterbox.com/lifeproof/pattern-library
-gulp.task('publish', ['build'], function(){
+gulp.task('publish', ['assets'], function(){
   console.log("Publishing to http://ecommdev.office.otterbox.com/lifeproof/lp-homepage");
   return gulp.src('dist/**')
     .pipe($.rsync({
