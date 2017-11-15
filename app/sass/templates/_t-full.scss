@@ -1,10 +1,29 @@
 .t-full {
   position: relative;
   @include border-box;
+  overflow-x: hidden;
+
+  picture {
+
+    @media #{$breakpoint-medium} {
+      display: flex;
+      justify-content: center;
+
+      &.pin-left {
+        justify-content: flex-start;
+      }
+
+      &.pin-right {
+        justify-content: flex-end;
+      }   
+    }
+  }
 
   &__img {
-    display: block;
-    width: 100%;
+    
+    @media #{$breakpoint-medium} {
+      max-width: unset;
+    }
   }
 
   &__wrap {
@@ -65,13 +84,12 @@
   }
 
   &__heading {
-    letter-spacing: .08em;
     text-transform: uppercase;
   }
 
   &__copy {
-    letter-spacing: .09em;
-    line-height: 1.25;
+    letter-spacing: .16em;
+    line-height: 1.2;
 
     @media #{$breakpoint-medium} {
       font-size: 0.875em;

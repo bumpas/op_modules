@@ -69,10 +69,20 @@ gulp.task('htmljs', function(){
 });
 
 // Output fonts to build directory
-gulp.task('build', function(){
+gulp.task('fonts', function(){
   return gulp.src('app/fonts/**')
     .pipe(gulp.dest('dist/fonts'));
 });
+
+//output images to build directory
+gulp.task('images', function(){
+  return gulp.src('app/images/**')
+    .pipe($.imagemin())
+    .pipe(gulp.dest('dist/images'));
+});
+
+//Build fonts and images
+gulp.task('assets', ['fonts', 'images']);
 
 // Publish to ecommdev.office.otterbox.com/lifeproof/pattern-library
 gulp.task('publish', ['build'], function(){
