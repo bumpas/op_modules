@@ -13,26 +13,28 @@ var src = {
   js:   'app/js/**/*.js'
 };
 
+var onError = function (err) {
+  $.notify({
+       title: 'Gulp Task Error',
+       message: 'Check the console.',
+       sound: 'Basso',
+       closeLabel: 'Close'
+   }).write(err);
+
+  console.log(err.toString());
+   
+  this.emit('end');
+}
+
 gulp.task('sass', function(){
 
-  return gulp.src(['app/sass/*.scss'])
+  return gulp.src([src.sass])
     .pipe($.sass({
-      // Sass error handler
-      onError: function(error){
-
-        console.log("SASS Error: " + error.file + " " + error.line + ":" + error.column + "\n" + error.message);
-
-        $.notifier.notify({
-          title: "SASS Error",
-          subtitle: error.file + " " + error.line + ":" + error.column,
-          message: error.message,
-          sound: "Hero"
-        });
-
-      },
       outputStyle: 'expanded',
       sourceComments: true
     }))
+
+    .on('error', onError)
 
     // Autoprefixer
     .pipe($.autoprefixer({
