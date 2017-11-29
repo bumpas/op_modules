@@ -3,6 +3,7 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'gulp.*', '*'],
   rename: {
+    'gulp-clean-css': 'cleanCSS',
     'node-notifier': 'notifier'
   }
 });
@@ -54,7 +55,7 @@ gulp.task('sass', function(){
     }))
 
     // Minify
-    .pipe($.minifyCss())
+    .pipe($.cleanCSS({level: 2}))
 
     // Output
     .pipe(gulp.dest('./dist/css'));
