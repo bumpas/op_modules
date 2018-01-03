@@ -1,3 +1,10 @@
+// *************************************
+//
+//   t-tiles
+//   simple 1 column flex layout that breaks to 3 columns at breakpoint-medium
+//
+// *************************************
+
 .t-tiles {
   position: relative;
   display: flex;
@@ -39,9 +46,9 @@
   }
 }
 
-
-
-/* Modifiers */
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
 
 .t-tiles--padded {
   &:after {
@@ -75,6 +82,29 @@
 
     @media #{$breakpoint-medium} {
       flex: 0 0 25%;
+    }
+  }
+
+  &:after {
+    display: none;
+  }
+}
+
+.t-tiles--xscroll {
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  @media #{$breakpoint-medium} {
+    flex-flow: row wrap;
+    overflow-x: hidden;
+  }
+
+  .t-tiles__tile:first-child {
+    margin-left: 25%;
+
+    @media #{$breakpoint-medium} {
+      margin-left: initial;
     }
   }
 }
