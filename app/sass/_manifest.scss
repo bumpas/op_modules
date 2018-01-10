@@ -12,7 +12,6 @@
 @import
 'mixins/brand',
 'mixins/box-sizing',
-'mixins/poly-fluid-sizing',
 'mixins/typography';
 
 // -------------------------------------
@@ -22,11 +21,7 @@
 @import
 'base/config',
 'base/typography',
-'base/utilities',
-'functions/map-sort',
-'functions/list-sort',
-'functions/list-remove',
-'functions/linear-interpolation';
+'base/utilities';
 
 // -------------------------------------
 //   Vendor
